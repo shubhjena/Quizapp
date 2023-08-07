@@ -1,4 +1,4 @@
-package com.shubhashish.quizapp;
+package com.shubhashish.quizapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ import lombok.Data;
 public class Question {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String questionTitle;
     private String option1;
